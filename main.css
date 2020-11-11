@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(./img/1_pUi3vkj06Vqp_sXeiI-UbQ.jpeg) no-repeat center center/cover;
+  color: #ffffff;
+  font-family: 'Syne Mono', monospace;
+}
+
+body .container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .main span {
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  -webkit-animation: anim 3s linear infinite;
+          animation: anim 3s linear infinite;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  90% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff0808;
+    text-shadow: 0 0 25px #f70808;
+  }
+}
+
+@keyframes anim {
+  0% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  90% {
+    color: #ffffff;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff0808;
+    text-shadow: 0 0 25px #f70808;
+  }
+}
+
+body .container .main span:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+body .container .main span:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+body .container .main span:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+
+body .container .main span:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+body .container .main span:nth-child(5) {
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+}
+
+body .container .main span:nth-child(6) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+body .container .game {
+  width: 480px;
+  height: 500px;
+  background-color: rgba(238, 9, 9, 0.5);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+body .container .game h1 {
+  padding: 2rem 0;
+}
+
+body .container .game p {
+  padding: 1rem 0;
+}
+
+body .container .game #guess-input {
+  width: 60%;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bolder;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+body .container .game #guess-input:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+body .container .game .message {
+  margin-top: 3rem;
+  width: 80%;
+  height: 3rem;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+}
+
+body .container .game #guess-btn {
+  margin-top: 6rem;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  font-family: 'Syne Mono', monospace;
+  font-weight: bolder;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  background-color: red;
+  color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border: 3px #ffffff solid;
+  cursor: pointer;
+}
+
+body .container .game #guess-btn:hover {
+  background-color: #fa0e1a;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 500px) {
+  body .container .main span {
+    font-size: 3rem;
+  }
+  body .container .game {
+    width: 350px;
+    height: 470px;
+  }
+}
+
+@media (max-width: 321px) {
+  body .container .main span {
+    font-size: 3rem;
+  }
+  body .container .game {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 281px) {
+  body .container .main span {
+    font-size: 3rem;
+  }
+  body .container .game {
+    width: 250px;
+    height: 480px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
